@@ -47,7 +47,7 @@ For trading specifically: the combination of a token address, a time window, and
 **Installation**
 
 ```bash
-git clone https://github.com/YOURUSERNAME/solrouter-trading-agent.git
+git clone https://github.com/Hogwartsofweb3/solrouter-trading-agent.git
 cd solrouter-trading-agent
 npm install
 ```
