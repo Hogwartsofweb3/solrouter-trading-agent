@@ -89,7 +89,8 @@ npm start -- dogecoin
 <img width="576" height="501" alt="Screenshot 2026-04-08 231801" src="https://github.com/user-attachments/assets/622b8db0-a3d7-49a8-8bf9-ceb72db4b849" />
 
 
-*[Video link — add your Loom or YouTube URL here]*
+<img width="1866" height="614" alt="Screenshot 2026-04-09 162007" src="https://github.com/user-attachments/assets/b00907c1-758c-4132-ba19-6f8b6395da55" />
+
 
 ---
 
