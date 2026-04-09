@@ -6,7 +6,7 @@ A TypeScript CLI agent that fetches live token data and sends strategy analysis 
 
 ## The Problem
 
-When you send a trading prompt to a standard LLM API — OpenAI, Anthropic, wherever — that prompt travels in plaintext to a server you don't control. The logs exist. The request is visible. For a generic question this rarely matters. For a trading strategy query, it does.
+When you send a trading prompt to a standard LLM API - OpenAI, Anthropic, wherever - that prompt travels in plaintext to a server you don't control. The logs exist. The request is visible. For a generic question this rarely matters. For a trading strategy query, it does.
 
 If your prompt includes a specific token address, a position size, or a time window you're watching, that's information with real monetary value. Public inference providers can log it, third parties can intercept it, and anyone with access to those logs can act on it before you do.
 
@@ -23,7 +23,7 @@ This isn't a theoretical risk. It's the same front-running problem that exists o
 - Sends the encrypted payload to SolRouter's inference endpoint
 - Decrypts and prints the risk assessment in the terminal
 
-The on-chain data fetch is public and unencrypted — that's fine. Price data is already public. What stays private is the *strategy query* — what you're asking the model to do with that data.
+The on-chain data fetch is public and unencrypted - that's fine. Price data is already public. What stays private is the *strategy query* — what you're asking the model to do with that data.
 
 ---
 
@@ -31,9 +31,9 @@ The on-chain data fetch is public and unencrypted — that's fine. Price data is
 
 Standard encryption protects data in transit (TLS) and at rest. It doesn't protect the query once it reaches the server. The server decrypts it, processes it, and the plaintext prompt is briefly visible to the inference infrastructure.
 
-SolRouter uses a Trusted Execution Environment (TEE) — a hardware-isolated compute enclave — to process the query. The model runs inside the enclave. Even the infrastructure operator can't read the prompt. What gets logged (if anything) is a ciphertext, not your strategy.
+SolRouter uses a Trusted Execution Environment (TEE) - a hardware-isolated compute enclave - to process the query. The model runs inside the enclave. Even the infrastructure operator can't read the prompt. What gets logged (if anything) is a ciphertext, not your strategy.
 
-For trading specifically: the combination of a token address, a time window, and a "what's my entry?" prompt is enough to front-run a retail position. Encrypting at the query level closes that vector.
+For trading specifically, the combination of a token address, a time window, and a "what's my entry?" prompt is enough to front-run a retail position. Encrypting at the query level closes that vector.
 
 ---
 
@@ -86,7 +86,8 @@ npm start -- dogecoin
 
 ## Demo
 
-*[Screenshot placeholder — terminal output showing SOL fetch + encrypted analysis]*
+<img width="576" height="501" alt="Screenshot 2026-04-08 231801" src="https://github.com/user-attachments/assets/622b8db0-a3d7-49a8-8bf9-ceb72db4b849" />
+
 
 *[Video link — add your Loom or YouTube URL here]*
 
