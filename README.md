@@ -23,7 +23,7 @@ This isn't a theoretical risk. It's the same front-running problem that exists o
 - Sends the encrypted payload to SolRouter's inference endpoint
 - Decrypts and prints the risk assessment in the terminal
 
-The on-chain data fetch is public and unencrypted - that's fine. Price data is already public. What stays private is the *strategy query* — what you're asking the model to do with that data.
+The on-chain data fetch is public and unencrypted - that's fine. Price data is already public. What stays private is the *strategy query* - what you're asking the model to do with that data.
 
 ---
 
@@ -42,7 +42,7 @@ For trading specifically, the combination of a token address, a time window, and
 **Prerequisites**
 - Node.js 18 or higher
 - npm
-- A SolRouter API key — get one at [solrouter.com](https://solrouter.com) (no email, no KYC, connect wallet)
+- A SolRouter API key - get one at [solrouter.com](https://solrouter.com) (no email, no KYC, connect wallet)
 
 **Installation**
 
@@ -135,9 +135,9 @@ src/
 ## Tech
 
 - [@solrouter/sdk](https://npmjs.com/package/@solrouter/sdk) — encrypted inference
-- [axios](https://npmjs.com/package/axios) — HTTP client
-- [tsx](https://npmjs.com/package/tsx) — TypeScript execution
-- [CoinGecko API](https://www.coingecko.com/api/documentation) — market data
+- [axios](https://npmjs.com/package/axios) - HTTP client
+- [tsx](https://npmjs.com/package/tsx) - TypeScript execution
+- [CoinGecko API](https://www.coingecko.com/api/documentation) - market data
 
 ---
 
